@@ -8,7 +8,10 @@ const Navbar = () => {
     <nav className="fixed w-full bg-white shadow-md z-50 px-6 py-4">
       <div className="flex justify-between items-center max-w-6xl mx-auto">
         <h1 className="text-xl font-bold">
-          <a href="/">Khanjan</a>
+          <a href="/" className="flex  space-x-2">
+            <img src="/Khanjan-logo.png" alt="Logo" className="w-8 h-8" />
+            <span>Khanjan</span>
+          </a>
         </h1>
 
         {/* Hamburger Icon */}

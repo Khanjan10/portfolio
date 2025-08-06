@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaClock } from "react-icons/fa";
-import { FaLinkedin, FaGithub, FaTwitter, FaEnvelopeSquare } from "react-icons/fa";
+import {
+  FaEnvelope, FaPhone, FaClock,
+  FaLinkedin, FaGithub, FaEnvelopeSquare
+} from "react-icons/fa";
 
 const Contact = () => {
+  useEffect(() => {
+    if (window.location.hash === "#contact") {
+      // Check for referrer to detect form redirect
+      if (document.referrer.includes("formsubmit.co")) {
+        alert("Your message has been sent!");
+      }
+    }
+  }, []);
+
   return (
     <motion.section
       id="contact"
@@ -19,7 +30,7 @@ const Contact = () => {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-        {/* Left - Contact Info */}
+        {/* Contact Info */}
         <div className="space-y-6">
           <div className="flex items-center gap-4">
             <div className="bg-blue-100 p-3 rounded-full">
@@ -39,15 +50,6 @@ const Contact = () => {
               <p className="text-gray-600">+91 97691 79774</p>
             </div>
           </div>
-          {/* <div className="flex items-center gap-4">
-            <div className="bg-blue-100 p-3 rounded-full">
-              <FaMapMarkerAlt className="text-blue-600" />
-            </div>
-            <div>
-              <p className="font-semibold">Location</p>
-              <p className="text-gray-600">Ahmedabad, India</p>
-            </div>
-          </div> */}
           <div className="flex items-center gap-4">
             <div className="bg-blue-100 p-3 rounded-full">
               <FaClock className="text-blue-600" />
@@ -72,17 +74,28 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Right - Contact Form */}
-        <form className="space-y-6">
+        {/* Contact Form */}
+        <form
+          action="https://formsubmit.co/khanjangadhiya@gmail.com"
+          method="POST"
+          className="space-y-6"
+        >
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="box" />
+          <input type="hidden" name="_next" value={`${window.location.origin}/#contact`} />
+
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <input
               type="text"
+              name="name"
               placeholder="Your full name"
               className="w-full border px-4 py-2 rounded"
               required
             />
             <input
               type="email"
+              name="email"
               placeholder="your.email@example.com"
               className="w-full border px-4 py-2 rounded"
               required
@@ -90,11 +103,13 @@ const Contact = () => {
           </div>
           <input
             type="text"
+            name="subject"
             placeholder="Project inquiry"
             className="w-full border px-4 py-2 rounded"
             required
           />
           <textarea
+            name="message"
             placeholder="Tell me about your project..."
             className="w-full border px-4 py-2 rounded min-h-[120px]"
             maxLength={500}
