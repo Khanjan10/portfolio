@@ -57,7 +57,7 @@ const Projects = () => {
       viewport={{ once: true }}
       className="py-20 px-4 max-w-6xl mx-auto text-center"
     >
-      <h2 className="text-3xl font-semibold mb-4">My Projects</h2>
+      <h2 className="text-3xl font-bold mb-4">My Projects</h2>
       <p className="mb-8 text-gray-600">
         A showcase of my recent work across different technologies and industries
       </p>

@@ -24,7 +24,7 @@ const Contact = () => {
       viewport={{ once: true }}
       className="py-20 px-4 max-w-6xl mx-auto"
     >
-      <h2 className="text-4xl font-bold text-center mb-4">Get In Touch</h2>
+      <h2 className="text-3xl font-bold text-center mb-4">Get In Touch</h2>
       <p className="text-center text-gray-600 mb-12">
         Ready to start your next project? Let's discuss how I can help bring your vision to life.
       </p>

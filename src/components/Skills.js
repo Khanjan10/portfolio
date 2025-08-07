@@ -46,7 +46,7 @@ const Skills = () => {
       viewport={{ once: true }}
       className="py-20 px-4 max-w-6xl mx-auto text-center"
     >
-      <h2 className="text-3xl font-semibold mb-4">Skills</h2>
+      <h2 className="text-3xl font-bold mb-4">Skills</h2>
       <p className="mb-8 text-gray-600">
         Explore my technical skillset categorized by development areas
       </p>
