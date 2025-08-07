@@ -12,8 +12,9 @@ const Hero = () => {
       viewport={{ once: true }}
       className="relative min-h-screen flex flex-col items-center justify-center pt-24 px-4 text-center bg-cover bg-center bg-no-repeat"
       style={{
-        background: "radial-gradient(600px at 699px 681px, rgba(29, 78, 216, 0.15), transparent 80%)"
-      }}
+        background: `
+          linear-gradient(180deg, #f9fafb 50%, #eef2ff 100%)`
+        }}
     >
       {/* Social icons left sidebar */}
       <div className="hidden md:flex flex-col absolute top-1/3 left-4 space-y-4">
@@ -25,18 +26,20 @@ const Hero = () => {
         </a>
       </div>
 
-      <div className=" bg-opacity-50 p-6 rounded-lg">
-        <h1 className="text-5xl font-bold text-navy">I'm Khanjan Gadhiya</h1>
-        <p className="mt-4 text-lg max-w-xl text-navy">
-          Specialized in MERN Stack & WordPress development. Creating modern, responsive, and user-friendly web applications with cutting-edge technologies.
-        </p>
+      <div className="bg-opacity-50 p-6 rounded-lg">
+        <h1 className="text-5xl mb-4 font-bold text-navy">I'm Khanjan Gadhiya</h1>
+        <h2 className="text-3xl text-purple-600 font-semibold mt-2">
+          Full-Stack Web Developer
+        </h2>
+
         <a
           href="#contact"
-          className="mt-6 inline-block px-6 py-2 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition"
+          className="mt-6 inline-block bg-purple-600 text-white hover:bg-purple-700 px-6 py-2 font-semibold rounded-full transition"
         >
-          Contact
+          Contact Me
         </a>
       </div>
+
     </motion.section>
   );
 };

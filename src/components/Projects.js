@@ -69,7 +69,7 @@ const Projects = () => {
             onClick={() => setSelectedCategory(cat)}
             className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
               selectedCategory === cat
-                ? "bg-blue-600 text-white"
+                ? "bg-primary text-white"
                 : "bg-gray-100 text-gray-700 hover:bg-gray-200"
             }`}
           >
@@ -98,20 +98,21 @@ const Projects = () => {
                 {project.techStack.map((tech, i) => (
                   <span
                     key={i}
-                    className="px-2 py-1 bg-blue-100 text-blue-800 text-xs font-semibold rounded-full"
+                    className="px-3 py-1 bg-secondary text-black text-xs font-semibold rounded-full"
                   >
                     {tech}
                   </span>
                 ))}
               </div>
               <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block text-blue-600 hover:underline"
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-primary font-semibold border border-primary px-3 py-1.5 rounded-full hover:bg-primary hover:text-white transition duration-200"
               >
                 View Project
               </a>
+
             </div>
           </div>
         ))}

@@ -1,3 +1,9 @@
+:root {
+  --color-primary: purple;
+  --color-bg: #9B7EBD;
+}
+
+
 .App {
   text-align: center;
   font-family: Poppins;

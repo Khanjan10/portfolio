@@ -33,8 +33,8 @@ const Contact = () => {
         {/* Contact Info */}
         <div className="space-y-6">
           <div className="flex items-center gap-4">
-            <div className="bg-blue-100 p-3 rounded-full">
-              <FaEnvelope className="text-blue-600" />
+            <div className="bg-primary p-3 rounded-full">
+              <FaEnvelope className="text-white" />
             </div>
             <div>
               <p className="font-semibold">Email</p>
@@ -42,8 +42,8 @@ const Contact = () => {
             </div>
           </div>
           <div className="flex items-center gap-4">
-            <div className="bg-blue-100 p-3 rounded-full">
-              <FaPhone className="text-blue-600" />
+            <div className="bg-primary p-3 rounded-full">
+              <FaPhone className="text-white" />
             </div>
             <div>
               <p className="font-semibold">Phone</p>
@@ -51,8 +51,8 @@ const Contact = () => {
             </div>
           </div>
           <div className="flex items-center gap-4">
-            <div className="bg-blue-100 p-3 rounded-full">
-              <FaClock className="text-blue-600" />
+            <div className="bg-primary p-3 rounded-full">
+              <FaClock className="text-white" />
             </div>
             <div>
               <p className="font-semibold">Response Time</p>
@@ -117,7 +117,7 @@ const Contact = () => {
           ></textarea>
           <button
             type="submit"
-            className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded font-semibold"
+            className="w-full bg-primary text-white py-3 rounded font-semibold"
           >
             Send Message
           </button>

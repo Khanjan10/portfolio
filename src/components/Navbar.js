@@ -21,14 +21,14 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6 items-center">
-          <a href="/" className="hover:text-blue-500">Home</a>
-          <a href="#about" className="hover:text-blue-500">About</a>
-          <a href="#projects" className="hover:text-blue-500">Projects</a>
-          <a href="#contact" className="hover:text-blue-500">Contact</a>
+          <a href="/" className="font-semibold hover:text-primary">Home</a>
+          <a href="#about" className="font-semibold hover:text-primary">About</a>
+          <a href="#projects" className="font-semibold hover:text-primary">Projects</a>
+          <a href="#contact" className="font-semibold hover:text-primary">Contact</a>
           <a
             href="/Khanjan_Gadhiya_Web_Developer.pdf"
             download
-            className="px-4 py-1 bg-black text-white rounded hover:bg-gray-800"
+            className="px-4 py-1 bg-primary text-white rounded hover:bg-gray-800"
           >
             Resume
           </a>
