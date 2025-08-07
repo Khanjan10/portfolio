@@ -51,7 +51,7 @@ const Skills = () => {
         Explore my technical skillset categorized by development areas
       </p>
 
-      <div className="flex justify-center space-x-4 mb-8 flex-wrap">
+      <div className="flex flex-wrap justify-center gap-3 mb-8">
         {["All", ...Object.keys(skillsByCategory)].map((cat) => (
           <button
             key={cat}
