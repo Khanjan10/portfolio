@@ -17,7 +17,7 @@ const projectsData = [
       "Frontend-only project replicating the Spotify web UI using HTML, CSS, and JavaScript.",
     techStack: ["HTML", "CSS", "JavaScript"],
     image: "/assets/projects/spotify.png",
-    link: "https://spotify-clone-kg.netlify.app/",
+    link: "https://github.com/Khanjan10/spotify-clone",
     category: "Frontend"
   },
   {
