@@ -24,7 +24,7 @@ const skillIcons = {
 
 const skillsByCategory = {
   Frontend: ["React", "HTML", "CSS", "JavaScript", "TailwindCSS"],
-  Backend: ["Node.js", "Express", "JWT", "Socket.io"],
+  Backend: ["Node.js", "Express"],
   Database: ["MongoDB", "MySQL"],
   Tools: ["GitHub", "VS Code", "WordPress", "Shopify", "Canva"]
 };
