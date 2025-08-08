@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FaWordpress, FaShopify, FaGithub, FaCode, FaReact, FaHtml5, FaCss3Alt, FaNodeJs } from "react-icons/fa";
-import { SiJavascript, SiExpress, SiJsonwebtokens, SiSocketdotio, SiMongodb, SiMysql, SiStripe, SiTailwindcss } from "react-icons/si";
+import { SiJavascript, SiExpress, SiJsonwebtokens, SiSocketdotio, SiMongodb, SiMysql, SiStripe, SiTailwindcss, SiCanva } from "react-icons/si";
 
 const skillIcons = {
   React: <FaReact className="text-blue-500" />,
@@ -18,6 +18,7 @@ const skillIcons = {
   GitHub: <FaGithub className="text-gray-800" />,
   "VS Code": <FaCode className="text-blue-600" />,
   WordPress: <FaWordpress className="text-blue-900" />,
+  Canva: <SiCanva className="text-blue-900" />,
   Shopify: <FaShopify className="text-green-800" />
 };
 
@@ -25,7 +26,7 @@ const skillsByCategory = {
   Frontend: ["React", "HTML", "CSS", "JavaScript", "TailwindCSS"],
   Backend: ["Node.js", "Express", "JWT", "Socket.io"],
   Database: ["MongoDB", "MySQL"],
-  Tools: ["GitHub", "VS Code"]
+  Tools: ["GitHub", "VS Code", "WordPress", "Shopify", "Canva"]
 };
 
 const Skills = () => {
