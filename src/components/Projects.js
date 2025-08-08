@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const projectsData = [
   {
-    title: "Airbnb Clone",
+    title: "Airbnb Replica",
     description:
       "Full-stack clone of Airbnb using Node.js, Express, and MongoDB. Built with MVC architecture and a responsive UI.",
     techStack: ["Node.js", "Express", "MongoDB", "EJS"],
@@ -21,7 +21,7 @@ const projectsData = [
     category: "Frontend"
   },
   {
-    title: "RiseOne Elevators",
+    title: "Riseon Elevators",
     description:
       "Business website for an elevator company built with WordPress. Custom theme development, image galleries, and SEO.",
     techStack: ["WordPress", "PHP", "MySQL"],
