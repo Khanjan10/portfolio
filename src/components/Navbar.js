@@ -21,7 +21,12 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6 items-center">
-          <a href="#" className="font-semibold hover:text-primary">Home</a>
+          <a 
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('about').scrollIntoView({behavior: "smooth"});
+            }} 
+            className="font-semibold hover:text-primary">Home</a>
           <a 
             onClick={(e) => {
               e.preventDefault();
