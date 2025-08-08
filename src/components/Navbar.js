@@ -22,9 +22,24 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6 items-center">
           <a href="#" className="font-semibold hover:text-primary">Home</a>
-          <a href="#about" className="font-semibold hover:text-primary">About</a>
-          <a href="#projects" className="font-semibold hover:text-primary">Projects</a>
-          <a href="#contact" className="font-semibold hover:text-primary">Contact</a>
+          <a 
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('about').scrollIntoView({behavior: "smooth"});
+            }}
+            className="font-semibold hover:text-primary cursor-pointer">About</a>
+          <a
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('projects').scrollIntoView({behavior: "smooth"});
+            }} 
+            className="font-semibold hover:text-primary cursor-pointer">Projects</a>
+          <a 
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('contact').scrollIntoView({behavior: "smooth"});
+            }} 
+            className="font-semibold hover:text-primary cursor-pointer">Contact</a>
           <a
             href="/Khanjan_Gadhiya_Web_Developer.pdf"
             download
