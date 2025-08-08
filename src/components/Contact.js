@@ -11,6 +11,7 @@ import {
 
 const Contact = () => {
   const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault(); // Prevent redirect
@@ -25,8 +26,10 @@ const Contact = () => {
 
     setLoading(false);
     e.target.reset();
-    window.location.hash = "contact";
-    alert("Your message has been sent!");
+    setSuccess(true);
+
+    // Hide message after 5 seconds
+    setTimeout(() => setSuccess(false), 5000);
   };
 
   return (
@@ -153,6 +156,13 @@ const Contact = () => {
           >
             {loading ? "Sending..." : "Send Message"}
           </button>
+
+          {/* Success Message */}
+          {success && (
+            <p className="mt-4 p-3 border border-green-500 text-green-600 rounded bg-green-50">
+              ✅ Your message has been sent!
+            </p>
+          )}
         </form>
       </div>
     </motion.section>
