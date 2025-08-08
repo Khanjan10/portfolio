@@ -24,7 +24,7 @@ const Navbar = () => {
           <a 
             onClick={(e) => {
               e.preventDefault();
-              document.getElementById('about').scrollIntoView({behavior: "smooth"});
+              document.getElementById('home').scrollIntoView({behavior: "smooth"});
             }} 
             className="font-semibold hover:text-primary cursor-pointer">Home</a>
           <a 
