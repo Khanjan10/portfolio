@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import emailjs from "emailjs-com";
 import {
   FaEnvelope,
   FaPhone,
@@ -13,27 +14,36 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault(); // Prevent redirect
+  const handleSubmit = (e) => {
+    e.preventDefault();
     setLoading(true);
 
-    const formData = new FormData(e.target);
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        e.target,
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+      )
 
-    await fetch("https://formsubmit.co/khanjangadhiya@gmail.com", {
-      method: "POST",
-      body: formData,
-    });
+      .then(
+        () => {
+          setLoading(false);
+          e.target.reset();
+          setSuccess(true);
+          setTimeout(() => setSuccess(false), 5000);
+        },
+        (error) => {
+          setLoading(false);
+          console.error("EmailJS Error:", error);
+        }
+      );
 
-    setLoading(false);
-    e.target.reset();
-    setSuccess(true);
-
-    // Hide message after 5 seconds
-    setTimeout(() => setSuccess(false), 5000);
+      console.log(process.env.EMAILJS_PUBLIC_KEY);
   };
 
   return (
-    <section
+    <motion.section
       id="contact"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -113,9 +123,6 @@ const Contact = () => {
 
         {/* Contact Form */}
         <form onSubmit={handleSubmit} className="space-y-6">
-          <input type="hidden" name="_captcha" value="false" />
-          <input type="hidden" name="_template" value="box" />
-
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <input
               type="text"
@@ -157,7 +164,6 @@ const Contact = () => {
             {loading ? "Sending..." : "Send Message"}
           </button>
 
-          {/* Success Message */}
           {success && (
             <p className="mt-4 p-3 border border-green-500 text-green-600 rounded bg-green-50">
               ✅ Your message has been sent!
@@ -165,7 +171,7 @@ const Contact = () => {
           )}
         </form>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
