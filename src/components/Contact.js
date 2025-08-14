@@ -25,7 +25,6 @@ const Contact = () => {
         e.target,
         process.env.REACT_APP_EMAILJS_PUBLIC_KEY
       )
-
       .then(
         () => {
           setLoading(false);
@@ -38,8 +37,6 @@ const Contact = () => {
           console.error("EmailJS Error:", error);
         }
       );
-
-      console.log(process.env.EMAILJS_PUBLIC_KEY);
   };
 
   return (
@@ -65,10 +62,7 @@ const Contact = () => {
             </div>
             <div>
               <p className="font-semibold">Email</p>
-              <a
-                href="mailto:khanjangadhiya@gmail.com"
-                className="text-gray-600"
-              >
+              <a href="mailto:khanjangadhiya@gmail.com" className="text-gray-600">
                 khanjangadhiya@gmail.com
               </a>
             </div>
@@ -94,7 +88,7 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Socials */}
+          {/* Social Links */}
           <div className="flex gap-4 mt-6">
             <a
               href="https://github.com/KhanjanGadhiya"
