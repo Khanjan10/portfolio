@@ -39,7 +39,7 @@ const Skills = () => {
       : skillsByCategory[selectedCategory] || [];
 
   return (
-    <motion.section
+    <section
       id="skills"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -79,7 +79,7 @@ const Skills = () => {
           </div>
         ))}
       </div>
-    </motion.section>
+    </section>
   );
 };
 

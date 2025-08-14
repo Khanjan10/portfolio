@@ -5,7 +5,7 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="fixed w-full bg-white shadow-md z-50 px-6 py-4">
+    <nav className=" w-full fixed bg-white shadow-md z-50 px-6 py-4">
       <div className="flex justify-between items-center max-w-6xl mx-auto">
         <h1 className="text-xl font-bold">
           <a href="/" className="flex  space-x-2">

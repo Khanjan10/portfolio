@@ -4,7 +4,7 @@ import { FaLinkedin, FaTwitter, FaYoutube, FaGithub, FaBook } from "react-icons/
 
 const Hero = () => {
   return (
-    <motion.section
+    <section
       id="home"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -40,7 +40,7 @@ const Hero = () => {
         </a>
       </div>
 
-    </motion.section>
+    </section>
   );
 };
 

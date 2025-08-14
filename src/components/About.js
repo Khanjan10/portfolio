@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <motion.section
+    <section
       id="about"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -16,7 +16,7 @@ const About = () => {
         With over 2+ years of experience in web development, I specialize in creating robust, scalable applications using the MERN stack (MongoDB, Express.js, React, Node.js) and WordPress. My journey began with a computer science degree and has evolved through working with startups and established companies.
   I'm passionate about writing clean, efficient code and staying up-to-date with the latest industry trends. Whether it's building a complex web application from scratch or customizing WordPress themes, I approach every project with enthusiasm and attention to detail.
       </p>
-    </motion.section>
+    </section>
   );
 };
 

@@ -33,7 +33,7 @@ const Contact = () => {
   };
 
   return (
-    <motion.section
+    <section
       id="contact"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -165,7 +165,7 @@ const Contact = () => {
           )}
         </form>
       </div>
-    </motion.section>
+    </section>
   );
 };
 

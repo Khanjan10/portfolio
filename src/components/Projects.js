@@ -49,7 +49,7 @@ const Projects = () => {
       : projectsData.filter((proj) => proj.category === selectedCategory);
 
   return (
-    <motion.section
+    <section
       id="projects"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -117,7 +117,7 @@ const Projects = () => {
           </div>
         ))}
       </div>
-    </motion.section>
+    </section>
   );
 };
 
