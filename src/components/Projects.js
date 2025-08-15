@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 
 const projectsData = [
   {
-    title: "WanderStay - Airbnb Replica",
+    title: "WanderStay",
     description:
       "Full-stack clone of Airbnb using Node.js, Express, and MongoDB. Built with MVC architecture and a responsive UI.",
     techStack: ["Node.js", "Express", "MongoDB", "EJS"],
-    image: "/assets/projects/airbnb.png",
+    image: "/assets/projects/WanderStay.png",
     link: "https://airbnb-clone-qpjf.onrender.com/listings",
     category: "MERN Stack"
   },
