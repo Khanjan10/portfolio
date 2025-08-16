@@ -25,7 +25,7 @@ const projectsData = [
     description:
       "Business website for an elevator company built with WordPress. Custom theme development, image galleries, and SEO.",
     techStack: ["WordPress", "PHP", "MySQL"],
-    image: "/assets/projects/riseone.png",
+    image: "/assets/projects/riseon_elevators.png",
     link: "http://riseonelevators.com",
     category: "WordPress"
   },
