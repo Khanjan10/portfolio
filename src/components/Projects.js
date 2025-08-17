@@ -90,7 +90,7 @@ const Projects = () => {
               className="w-full h-48 object-fill"
             />
             <div className="p-4">
-              <h3 className="text-xl font-semibold mb-2">
+              <h3 className="text-xl  font-semibold mb-2">
                 {project.title}
               </h3>
               <p className="text-gray-600 mb-4">{project.description}</p>

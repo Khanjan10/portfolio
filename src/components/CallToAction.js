@@ -11,7 +11,10 @@ const CallToAction = () => {
         Let's discuss how I can help bring your ideas to life.
       </p>
       <a
-        href="#contact"
+        onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('contact').scrollIntoView({behavior: "smooth"});
+            }} 
         className="inline-block px-6 py-2 bg-primary text-white font-semibold rounded-full hover:bg-white border border-primary hover:text-primary transition"
       >
         Let's Work Together
