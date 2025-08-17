@@ -8,7 +8,7 @@ const projectsData = [
       "Full-stack clone of Airbnb using Node.js, Express, and MongoDB. Built with MVC architecture and a responsive UI.",
     techStack: ["Node.js", "Express", "MongoDB", "EJS"],
     image: "/assets/projects/WanderStay.png",
-    link: "https://airbnb-clone-qpjf.onrender.com/listings",
+    link: "https://airbnb-clone-qpjf.onrender.com/",
     category: "MERN Stack"
   },
   {
