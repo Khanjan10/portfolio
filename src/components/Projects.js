@@ -16,7 +16,7 @@ const projectsData = [
     description:
       "Frontend-only project replicating the Spotify web UI using HTML, CSS, and JavaScript.",
     techStack: ["HTML", "CSS", "JavaScript"],
-    image: "/assets/projects/spotify.png",
+    image: "/assets/projects/spotify-clone.png",
     link: "https://github.com/Khanjan10/spotify-clone",
     category: "Frontend"
   },
@@ -87,7 +87,7 @@ const Projects = () => {
             <img
               src={project.image}
               alt={project.title}
-              className="w-full h-48 object-contain"
+              className="w-full h-48 object-fill"
             />
             <div className="p-4">
               <h3 className="text-xl font-semibold mb-2">
