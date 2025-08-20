@@ -7,7 +7,8 @@ import {
   FaClock,
   FaLinkedin,
   FaGithub,
-  FaEnvelopeSquare
+  FaEnvelopeSquare,
+  FaWhatsapp
 } from "react-icons/fa";
 
 const Contact = () => {
@@ -91,26 +92,30 @@ const Contact = () => {
           {/* Social Links */}
           <div className="flex gap-4 mt-6">
             <a
-              href="https://github.com/KhanjanGadhiya"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-black text-white p-3 rounded-lg"
-            >
-              <FaGithub />
-            </a>
-            <a
               href="https://linkedin.com/in/khanjan-gadhiya"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-blue-600 text-white p-3 rounded-lg"
+              className="bg-[#0A66C2] p-2 rounded shadow hover:scale-110 transition"
             >
-              <FaLinkedin />
-            </a>
+              <FaLinkedin size={20} color="white" /> {/* LinkedIn blue */}
+                    </a>
+            
             <a
-              href="mailto:khanjangadhiya@gmail.com"
-              className="bg-red-500 text-white p-3 rounded-lg"
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#181717] p-2 rounded shadow hover:scale-110 transition"
             >
-              <FaEnvelopeSquare />
+              <FaGithub size={20} color="white" /> {/* GitHub black */}
+            </a>
+                    
+            <a
+              href="https://wa.me/+919769179774"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#25D366] p-2 rounded shadow hover:scale-110 transition"
+            >
+              <FaWhatsapp size={20} color="white" /> {/* WhatsApp */}
             </a>
           </div>
         </div>

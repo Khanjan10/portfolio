@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaLinkedin, FaTwitter, FaYoutube, FaGithub, FaBook } from "react-icons/fa";
+import { FaLinkedin, FaTwitter, FaYoutube, FaGithub, FaBook, FaWhatsapp } from "react-icons/fa";
 
 const Hero = () => {
   return (
@@ -17,22 +17,35 @@ const Hero = () => {
         }}
     >
       {/* Social icons left sidebar */}
-      <div className="hidden md:flex flex-col absolute top-1/3 left-4 space-y-4">
+      <div className="hidden items-center md:flex flex-col absolute left-1 space-y-4">
+        {/* Linkedin */}
         <a
           href="https://linkedin.com/in/khanjan-gadhiya"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-white p-2 rounded shadow hover:scale-110 transition"
+          className="bg-[#0A66C2] p-2 rounded shadow hover:scale-110 transition"
         >
-          <FaLinkedin size={20} color="#0A66C2" /> {/* LinkedIn blue */}
+          <FaLinkedin size={20} color="white" /> {/* LinkedIn blue */}
         </a>
+
+        {/* Github */}
         <a
           href="https://github.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-white p-2 rounded shadow hover:scale-110 transition"
+            className="bg-[#181717] p-2 rounded shadow hover:scale-110 transition"
         >
-          <FaGithub size={20} color="#181717" /> {/* GitHub black */}
+          <FaGithub size={20} color="white" /> {/* GitHub black */}
+        </a>
+        
+        {/* WhatsApp */}
+        <a
+          href="https://wa.me/+919769179774"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-[#25D366] p-2 rounded shadow hover:scale-110 transition"
+        >
+          <FaWhatsapp size={20} color="white" /> {/* WhatsApp */}
         </a>
       </div>
 
