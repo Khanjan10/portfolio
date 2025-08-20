@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaAward, FaExternalLinkAlt } from "react-icons/fa";
+import { FaAward, FaExternalLinkAlt, FaUniversity } from "react-icons/fa";
 
 const Certifications = () => {
   const certificate = {
@@ -49,13 +49,17 @@ const Certifications = () => {
       >
         <div className="flex items-center gap-3 mb-3">
           <FaAward className="text-primary text-2xl" />
-          <h3 className="text-xl font-semibold text-primary">
+          <h3 className="text-xl font-semibold text-black">
             {certificate.title}
           </h3>
         </div>
         <div className="flex justify-between mb-4">
-          <p className="text-black font-semibold">{certificate.issuer}</p>
-          <p className="text-black font-semibold">{certificate.date}</p>
+            
+            <div className="flex items-center gap-2 px-3 py-1 bg-primary/10 text-black font-semibold rounded-full inline-block">
+                <FaUniversity className="text-primary" />
+                <span>{certificate.issuer}</span>
+            </div>
+            <p className="text-black font-semibold">{certificate.date}</p>
         </div>
 
         {/* Bullet Points */}
