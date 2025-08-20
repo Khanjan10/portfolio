@@ -65,7 +65,7 @@ const Navbar = () => {
           <a
             href="/Khanjan_Gadhiya_Web_Developer.pdf"
             download
-            className="mt-2 inline-block px-4 py-1 bg-black text-white rounded hover:bg-gray-800"
+            className="mt-2 inline-block px-4 py-1 bg-primary text-white rounded hover:bg-gray-800"
           >
             Resume
           </a>
