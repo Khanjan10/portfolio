@@ -18,13 +18,24 @@ const Hero = () => {
     >
       {/* Social icons left sidebar */}
       <div className="hidden md:flex flex-col absolute top-1/3 left-4 space-y-4">
-        <a href="https://linkedin.com/in/khanjan-gadhiya" target="_blank" rel="noopener noreferrer" className="text-black hover:text-blue-700 bg-white p-2 rounded shadow">
-          <FaLinkedin size={20} />
+        <a
+          href="https://linkedin.com/in/khanjan-gadhiya"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-white p-2 rounded shadow hover:scale-110 transition"
+        >
+          <FaLinkedin size={20} color="#0A66C2" /> {/* LinkedIn blue */}
         </a>
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-black hover:text-gray-800 bg-white p-2 rounded shadow">
-          <FaGithub size={20} />
+        <a
+          href="https://github.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-white p-2 rounded shadow hover:scale-110 transition"
+        >
+          <FaGithub size={20} color="#181717" /> {/* GitHub black */}
         </a>
       </div>
+
 
       <div className="bg-opacity-50 p-6 rounded-lg">
         <h1 className="text-5xl mb-4 font-bold text-navy">I'm Khanjan Gadhiya</h1>

@@ -53,9 +53,9 @@ const Certifications = () => {
             {certificate.title}
           </h3>
         </div>
-        <div className="flex justify-between">
-          <p className="text-gray-700 font-medium">{certificate.issuer}</p>
-          <p className="text-gray-700 font-medium text-sm mb-4">{certificate.date}</p>
+        <div className="flex justify-between mb-4">
+          <p className="text-black font-medium">{certificate.issuer}</p>
+          <p className="text-black font-medium">{certificate.date}</p>
         </div>
 
         {/* Bullet Points */}
