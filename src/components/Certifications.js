@@ -53,14 +53,14 @@ const Certifications = () => {
             {certificate.title}
           </h3>
         </div>
-        <div className="flex justify-between mb-4">
-            
-            <div className="flex items-center gap-2 px-3 py-1 bg-primary/10 text-black font-semibold rounded-full inline-block">
+        <div className="flex flex-col md:flex-row md:justify-between mb-4 gap-2">
+            <div className="flex items-center gap-2 px-3 py-1 bg-primary/10 text-black font-semibold rounded-full inline-block w-fit">
                 <FaUniversity className="text-primary" />
                 <span>{certificate.issuer}</span>
             </div>
             <p className="text-black font-semibold">{certificate.date}</p>
         </div>
+
 
         {/* Bullet Points */}
         <ul className="list-disc list-outside pl-5 text-gray-600 text-sm space-y-2 mt-2 mb-5">
