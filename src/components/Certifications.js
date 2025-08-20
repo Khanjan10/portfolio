@@ -54,12 +54,12 @@ const Certifications = () => {
           </h3>
         </div>
         <div className="flex justify-between mb-4">
-          <p className="text-black font-medium">{certificate.issuer}</p>
-          <p className="text-black font-medium">{certificate.date}</p>
+          <p className="text-black font-semibold">{certificate.issuer}</p>
+          <p className="text-black font-semibold">{certificate.date}</p>
         </div>
 
         {/* Bullet Points */}
-        <ul className="list-disc list-inside text-gray-600 text-sm space-y-2 mt-2 mb-5">
+        <ul className="list-disc list-outside pl-5 text-gray-600 text-sm space-y-2 mt-2 mb-5">
           {certificate.description.map((point, index) => (
             <li key={index}>{point}</li>
           ))}
