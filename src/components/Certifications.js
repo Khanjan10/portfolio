@@ -49,7 +49,7 @@ const Certifications = () => {
       >
         <div className="flex items-center gap-3 mb-3">
           <FaAward className="text-primary text-2xl" />
-          <h3 className="text-xl font-semibold text-gray-800">
+          <h3 className="text-xl font-semibold text-primary">
             {certificate.title}
           </h3>
         </div>
