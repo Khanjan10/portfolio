@@ -90,7 +90,7 @@ const Certifications = () => {
             href={certificate.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-white rounded-full font-medium text-sm hover:bg-purple-700 transition"
+            className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-white rounded-full border font-medium text-sm hover:bg-white hover:text-black hover:border-primary transition"
           >
             View Certificate <FaExternalLinkAlt className="text-xs" />
           </a>

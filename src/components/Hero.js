@@ -57,10 +57,22 @@ const Hero = () => {
         </h2>
 
         <a
-          href="#contact"
-          className="mt-6 inline-block bg-purple-600 text-white hover:bg-purple-700 px-6 py-2 font-semibold rounded-full transition"
+        onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('contact').scrollIntoView({behavior: "smooth"});
+            }} 
+          className="mt-6 inline-block bg-purple-600 text-white border hover:bg-white hover:text-black hover:border-primary px-6 py-2 font-semibold rounded-full transition"
         >
           Contact Me
+        </a>
+        <a
+           onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('projects').scrollIntoView({behavior: "smooth"});
+            }} 
+          className="mt-6 mx-4 inline-block border border-primary bg-white text-black hover:bg-purple-700 hover:text-white px-6 py-2 font-semibold rounded-full transition"
+        >
+          View Projects
         </a>
       </div>
 

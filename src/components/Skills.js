@@ -45,14 +45,14 @@ const Skills = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
-      className="py-20 px-4 max-w-6xl mx-auto text-center"
+      className="bg-secondary py-20 px-4 text-center"
     >
       <h2 className="text-3xl font-bold mb-4">Skills</h2>
       <p className="mb-8 text-gray-600">
         Explore my technical skillset categorized by development areas
       </p>
 
-      <div className="flex flex-wrap justify-center gap-3 mb-8">
+      <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-3 mb-8">
         {["All", ...Object.keys(skillsByCategory)].map((cat) => (
           <button
             key={cat}
@@ -60,7 +60,7 @@ const Skills = () => {
             className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
               selectedCategory === cat
                 ? "bg-purple-600 text-white"
-                : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                : "bg-white text-gray-700 hover:bg-white"
             }`}
           >
             {cat}
@@ -68,13 +68,13 @@ const Skills = () => {
         ))}
       </div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
+      <div className="max-w-6xl mx-auto text-center grid grid-cols-2 sm:grid-cols-4 gap-6">
         {displayedSkills.map((skill, index) => (
           <div
             key={index}
-            className="flex flex-col items-center bg-gray-100 rounded-lg p-4 shadow-sm hover:shadow-md transition"
+            className="flex flex-col items-center bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition"
           >
-            <div className="text-3xl mb-2">{skillIcons[skill]}</div>
+            <div className="text-4xl mb-2">{skillIcons[skill]}</div>
             <span className="text-sm font-medium text-gray-800">{skill}</span>
           </div>
         ))}
