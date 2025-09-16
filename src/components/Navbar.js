@@ -63,7 +63,7 @@ const Navbar = () => {
           <a href="#projects" onClick={toggleMenu} className="hover:text-blue-500">Projects</a>
           <a href="#contact" onClick={toggleMenu} className="hover:text-blue-500">Contact</a>
           <a
-            href="/Khanjan_Gadhiya_Web_Developer.pdf"
+            href="/Khanjan_Gadhiya.pdf"
             download
             className="mt-2 inline-block px-4 py-1 bg-primary text-white rounded hover:bg-gray-800"
           >
