@@ -46,7 +46,7 @@ const Navbar = () => {
             }} 
             className="font-semibold hover:text-primary cursor-pointer">Contact</a>
           <a
-            href="/Khanjan_Gadhiya_Web_Developer.pdf"
+            href="/Khanjan_Gadhiya.pdf"
             download
             className="px-4 py-1 bg-primary text-white rounded hover:bg-gray-800"
           >
