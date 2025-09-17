@@ -15,7 +15,7 @@ const CallToAction = () => {
               e.preventDefault();
               document.getElementById('contact').scrollIntoView({behavior: "smooth"});
             }} 
-        className="inline-block px-6 py-2 bg-primary text-white font-semibold rounded-full hover:bg-white border border-primary hover:text-primary transition"
+        className="inline-block px-6 py-2 bg-primary cursor-pointer text-white font-semibold rounded-full hover:bg-white border border-primary hover:text-primary transition"
       >
         Let's Work Together
       </a>
